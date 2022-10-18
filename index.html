@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="lang-panel change-lang" role="select">
+            
+            <button role="option" value="en" class="btn btn-eng" title="English"></button>
+            <button role="option" value="ro" class="btn btn-rom" title="Romanian"></button>
+            <button role="option" value="ru" class="btn btn-rus" title="Russian"></button> 
+            <!--<select class="change-lang form-select">
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="en">English</option>
+            </select> -->
+
+        </div>
+
+
+        <nav class="nav">
+            <ul>
+                <li><a class="lng-about" href="#">About Us</a></li>
+                <li><a class="lng-contact" href="#">Contact</a></li>
+                <li><a class="lng-adopt" href="#">Adopt</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <button class="theme-button theme-button-dog" onclick="changeFrontground('dog')"><img src="img/dog-btn.png"></button>
+            <button class="theme-button theme-button-cat" onclick="changeFrontground('cat')"><img src="img/cat-btn.png"></button>
+            <audio id="sound">
+                <source src="audio/cat.mp3"  type="audio/mp3">
+            </audio>
+            <!-- <audio class="dog-sound">
+                <source src="audio/dog.mp3"  type="audio/mp3">
+            </audio> -->
+          
+      </div>
+
+        
+    </header>
+
+    <main class="main">
+        <div class="main-pic">
+            
+            <img src="img/main-pic.png" id="main-image" alt="dog">
+            <!-- <img src="img/main-pic-cat.png" id="cat-image" style="display: none"> -->
+        </div>
+
+        <div class="main-text">
+            <h3 class="lng-title-h3">Pet Adoption Campaign</h3>
+            <h3 class="thin-h3 lng-title-h3-thin">New Edition 2022</h3>
+
+            <div class="main-h2">
+                <span class="lng-title-h2 black-h2">Your Pet Is A Huge Part of</span>
+                 <span class="color-h2 lng-title-h2-color">Your Family</span>!
+            </div>
+            <div class="main-desc lng-main-desc">
+                <p>
+                    It's easy to find a dog or cat who's right for you at a shelter or rescue group.
+                    The rescue or shelter will walk you through their adoption process. Prepare your home for the arrival of your dog or cat to help them adjust to their new family.
+                </p>
+            </div>
+            <div>
+                <a class="main-btn lng-button-bottom" href="#">Start Process Here!</a>
+            </div>
+        </div>
+    </main>
+
+
+    
+
+    <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
